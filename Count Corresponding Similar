@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std ;
+bool CountSimilar(int * , int * , bool * , int & , int);
+int main(){
+    int arr1[5] , arr2[5];
+    int count ;
+    bool answers[5];
+    for(int i = 0 ; i<5 ; i++)cin>>arr1[i];
+    for(int i = 0 ; i<5 ; i++)cin>>arr2[i];
+    bool is_identical = CountSimilar(arr1,arr2,answers,count,5);
+    for(int i = 0 ; i < 5 ; i++)cout<<answers[i]<<" ";
+    cout<<endl;
+    cout<<count<<endl;
+    if(is_identical) cout<<"identical"<<endl;
+    else cout<<"not identical"<<endl;
+    return 0 ;
+}
+bool CountSimilar(int *arr1 , int *arr2 , bool *answers , int &count , int size ){
+    bool is_identical = true;
+    count = 0 ;
+    for(int i = 0 ; i< size ; i++){
+        if(arr1[i] == arr2[i]) {
+            answers[i] = true ;
+            count++;
+        }
+        else {
+            answers[i] = false ;
+            is_identical = false ;
+        }
+    }
+    return is_identical ;
+}
