@@ -1,0 +1,30 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+bool CountOccurence(int [] , int , int , int& , int& , int&);
+int main() {
+    int numbers[6];
+    int number , count_num , count_neg_num , count_div_num;
+    for(int i=0 ; i< 6 ; i++)cin>>numbers[i];
+    cin>>number;
+    bool is_all_zeros =CountOccurence(numbers,6,number,count_num,count_neg_num ,count_div_num);
+    if(is_all_zeros)
+        cout<<"all zeros"<<endl;
+    else 
+        cout<<"not all zeros"<<endl;
+        cout<<count_num<<" "<<count_neg_num<<" "<<count_div_num<<endl;
+    return 0;
+}
+bool CountOccurence(int numbers[] , int size , int number , int &count_num , int &count_neg_num , int &count_div_num ){
+    count_num = count_neg_num = count_div_num = 0;
+    for(int i = 0 ; i < size ; i++){
+        if(numbers[i] == number) count_num++;
+        if(numbers[i] == -1 *number) count_neg_num++;
+        if( number!=0 &&numbers[i] % number == 0) count_div_num++;
+    }
+    if(count_num == 0 && count_neg_num == 0 && count_div_num == 0) return true;
+    else return false ;
+}
