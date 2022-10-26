@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std ;
+bool Reverse(int* , int);
+int main(){
+    int arr[7];
+    for(int i = 0 ;i < 7 ;i++) cin>>arr[i];
+    bool is_symmetric = Reverse(arr , 7);
+    if(is_symmetric) cout<<"symmetric"<<endl;
+    else cout<<"not symmetric"<<endl;
+    for(int i = 0 ; i < 7 ; i++) cout<<arr[i]<<" ";
+    return 0;
+}
+bool Reverse(int * arr , int size){
+    bool is_symmetric = true;
+    int temp;
+    for(int i = 0 ; i<= (size-1)/2 ; i++){
+        if(arr[i] != arr[size-i-1]){
+            is_symmetric =false;
+            break;
+        }
+    }
+    if(!is_symmetric){
+        for(int i = 0 ; i<= (size-1)/2 ; i++){
+        temp = arr[i];
+        arr[i] = arr[size-i-1];
+        arr[size-i-1] = temp;
+    }
+    }
+    return is_symmetric;
+}
