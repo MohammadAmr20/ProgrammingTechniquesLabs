@@ -1,0 +1,31 @@
+Write a function Reverse that takes an array as a pointer and array size
+
+• The function reverses the array in place (i.e. without allocating extra array)
+
+• If the array is symmetric, the function should not reverse the array and just returns false
+
+Write a program ( the “main” function) that:
+
+a. Creates a local array of size 7.
+
+b. Reads 7 integer numbers from the user and stores them in the array
+
+c. Calls the function Reverse with the required parameters then print array is "symmetric" or "not symmetric" and also prints array after reverse
+
+Input Format
+
+one line containing the 7 integers separated by space
+Constraints
+
+array values are any integer values
+Output Format
+
+one line containing "symmetric" or "not symmetric"
+one line containing the 7 array elements separated by space
+Sample Input 0
+
+1 4 5 5 5 4 1
+Sample Output 0
+
+symmetric
+1 4 5 5 5 4 1
