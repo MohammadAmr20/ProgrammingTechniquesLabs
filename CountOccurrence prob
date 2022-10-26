@@ -1,0 +1,32 @@
+Write a function CountOccurrence that takes an integer array and a non-negative integer X, and outputs the number of occurrence of X, -X, and the divisibles by X in the array. The function should also return false if the three counts are zeros.
+
+Write a program that:
+
+a. Creates an array of size 6 elements
+
+b. Reads the values of the 6 elements from the user
+
+c. Read X from the user
+
+d. Calls the function CountOccurrence with the required parameters and prints the three counts and a message indicating whether all counts are zeros.
+
+Input Format
+
+the first line containing 6 integers separated by space
+the second line containing X
+Constraints
+
+the values of the elements could be any integer value
+X is a non-negative integer
+Output Format
+
+the first line contains the sentence "all zeros" or "not all zeros" (depending or the returned boolean).
+the second line contains the 3 counts (X, -X, the divisibles by X) separated by a space.
+Sample Input 0
+
+3 6 -3 -5 3 4
+3
+Sample Output 0
+
+not all zeros
+2 1 4
