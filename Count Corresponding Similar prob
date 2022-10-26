@@ -1,0 +1,39 @@
+1- Write a function CountSimilar that takes two arrays of the same size 5 and performs the following:
+
+outputs an array of booleans of the same size which contains true is the two corresponding elements are similar, false if not
+
+outputs the count of elements that are at the same index in the two arrays AND contain equal values
+
+returns true if all the corresponding elements are similar (the two arrays are identical), false otherwise
+
+Write a program that:
+
+a. Creates two arrays of size 5 elements
+
+b. Reads the values of the 5 elements of the first array from the user
+
+c. Reads the values of the 5 elements of the second array from the user
+
+d. Calls the function CountSimilar with the two arrays and prints the elements of the output boolean array, the count of the corresponding similar, a message "identical" or "not identical".
+
+Input Format
+
+one line containing 5 integers for the first array
+one line containing 5 integers for the second array
+Constraints
+
+no constraints
+Output Format
+
+one line containing the boolean array elements space separated
+one line containing the count of corresponding similar
+one line containing "identical" or "not identical"
+Sample Input 0
+
+1 3 2 6 8
+1 2 3 6 7
+Sample Output 0
+
+1 0 0 1 0
+2
+not identical
