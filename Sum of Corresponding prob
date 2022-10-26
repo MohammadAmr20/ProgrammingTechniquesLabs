@@ -1,0 +1,33 @@
+Write a function CalcSumOfCorresponding that takes two arrays of the same size 5 and replaces each element of the first array with the sum of that element and its corresponding element in the second array (corresponding elements here mean the elements at the same index in the two arrays). The function also counts the number of zeros, positive, and negative resultant sums. Notice that the elements of the second array are not changed.
+
+Write a program that:
+
+a. Creates two arrays of size 5 elements
+
+b. Reads the values of the 5 elements of the first array from the user
+
+c. Reads the values of the 5 elements of the second array from the user
+
+d. Calls the function CalcSumOfCorresponding with the two arrays and prints the elements of the two arrays after the call, and the three output counts.
+
+Input Format
+
+one line containing the 5 integers of the first array
+one line containing the 5 integers of the second array
+Constraints
+
+no constraints
+Output Format
+
+one line containing the 5 integers of the first array, space separated
+one line containing the 5 integers of the second array, space separated
+one line contains the counts of zero sums, positive sums, negative sums, space separated
+Sample Input 0
+
+3 2  5 -2 -6
+2 0 -9  2 -7
+Sample Output 0
+
+5 2 -4 0 -13
+2 0 -9 2 -7
+1 2 2
